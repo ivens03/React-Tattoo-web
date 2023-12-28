@@ -1,6 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+
+    font-family: 'Roboto', sans-serif;
+  }
+
+  :root {
+    --primaryText: #FFFFFF;
+    --secondaryText: #B0ADAA;
   }
   
   a {
@@ -39,7 +48,7 @@
   
   .nav-list a {
     font-size: 18px;
-    color: #FFF;
+    color: var(--primaryText);
     padding-block: 16px;
   }
   
@@ -52,7 +61,7 @@
     display: none;
     border: none;
     background: none;
-    border-top: 3px solid #FFF;
+    border-top: 3px solid var(--primaryText);
     cursor: pointer;
   }
   
@@ -62,7 +71,7 @@
     display: block;
     width: 30px;
     height: 3px;
-    background: #FFF;
+    background: var(--primaryText);
     margin-top: 5px;
     position: relative;
     transition: 0.3s;
@@ -74,6 +83,16 @@
     align-items: center;
   }
 
+  .tattooPudim h1 {
+    margin-bottom: 1.25rem;
+  }
+
+  .buttonPudim {
+    color: var(--primaryText);
+    background-color: palevioletred;
+    padding: .75rem 2.5rem;
+    border: none;
+  }
 
   @media (max-width: 750px) {
     
